@@ -3,10 +3,15 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
+:root{
+  --custom-color-main: rgb(116, 42, 42);
+}
+
+ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
+
 p {
   font-size: 20px;
 }
@@ -18,9 +23,13 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #18BC9C;
+  color: #f7e5b5;
   outline: none;
 }
+.env-icon {
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -54,7 +63,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: var(--custom-color-main);
   color: white;
 }
 hr.star-primary {
@@ -69,7 +78,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  background: var(--custom-color-main);
   color: white;
 }
 header .container {
@@ -129,7 +138,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: var(--custom-color-main);
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -138,13 +147,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: var(--custom-color-main);
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: var(--custom-color-main);
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -154,9 +163,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: var(--custom-color-main);
   color: white;
-  border-color: #18BC9C;
+  border-color: var(--custom-color-main);
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -186,7 +195,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+  background: var(--custom-color-main);
   color: white;
 }
 @media (max-width: 767px) {
@@ -208,7 +217,7 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: var(--custom-color-main);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -289,7 +298,7 @@ section.success {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  color: var(--custom-color-main);
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -323,7 +332,7 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18BC9C;
+  color: var(--custom-color-main);
   background: white;
   border: solid 2px white;
 }
@@ -371,8 +380,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: white;
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: var(--custom-color-main);
+  border-color: var(--custom-color-main);
   font-weight: 700;
 }
 .btn-success:hover,
@@ -404,11 +413,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: var(--custom-color-main);
+  border-color: var(--custom-color-main);
 }
 .btn-success .badge {
-  color: #18BC9C;
+  color: var(--custom-color-main);
   background-color: white;
 }
 .btn-social {
